@@ -1,5 +1,9 @@
 # MyPackagedDocument
 
+![xcode](https://img.shields.io/badge/Xcode-5.1-blue)
+![swift](https://img.shields.io/badge/Swift-5.1-orange.svg)
+![license](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 This is an example project for iOS to demonstrate how to create and load packaged based `UIDocument` from `UIDocumentBrowserViewController`.
 
 It seems there aren't so much "working" example projects or codes how to handle packaged based `UIDocument`.  And I was having hard time to make it work, because `UIDocumentBrowserViewController` did not treat my package folders as a document, rather they are treated as just folders.
@@ -13,3 +17,6 @@ Xcode 11.1
 Swift 5.1
 iOS 12
 ```
+### License
+
+The MIT License
