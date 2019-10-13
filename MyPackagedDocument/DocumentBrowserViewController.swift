@@ -28,19 +28,16 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         // Do any additional setup after loading the view.
     }
     
-    
+    static let mypackageKey = "mypackage"
+    static let sampleKey = "sample"
     // MARK: UIDocumentBrowserViewControllerDelegate
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler importHandler: @escaping (URL?, UIDocumentBrowserViewController.ImportMode) -> Void) {
-        let newDocumentURL: URL? = nil
-        
-        // Set the URL for the new document here. Optionally, you can present a template chooser before calling the importHandler.
-        // Make sure the importHandler is always called, even if the user cancels the creation request.
-        if newDocumentURL != nil {
-            importHandler(newDocumentURL, .move)
-        } else {
-            importHandler(nil, .none)
-        }
+    	print("\(#function)")
+		var samplePackgaeURL = Bundle.main.url(forResource: Self.sampleKey, withExtension: Self.mypackageKey)!
+		let isPackage = (try? samplePackgaeURL.resourceValues(forKeys: [.isPackageKey]).isPackage) ?? false
+		print("isPackage=", isPackage)
+		importHandler(samplePackgaeURL, .copy)
     }
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didPickDocumentsAt documentURLs: [URL]) {

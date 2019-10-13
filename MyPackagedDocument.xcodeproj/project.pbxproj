@@ -14,6 +14,9 @@
 		CC6BF52B23523F0D0040F7C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6BF52923523F0D0040F7C6 /* Main.storyboard */; };
 		CC6BF52D23523F0F0040F7C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6BF52C23523F0F0040F7C6 /* Assets.xcassets */; };
 		CC6BF53023523F0F0040F7C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6BF52E23523F0F0040F7C6 /* LaunchScreen.storyboard */; };
+		CCEEA0202352DAEE007D3CF5 /* sample.mypackage in Resources */ = {isa = PBXBuildFile; fileRef = CCEEA01F2352DAEE007D3CF5 /* sample.mypackage */; };
+		CCEEA0232352DCDD007D3CF5 /* mypackage_320.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEEA0212352DCDD007D3CF5 /* mypackage_320.png */; };
+		CCEEA0242352DCDD007D3CF5 /* mypackage_64.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEEA0222352DCDD007D3CF5 /* mypackage_64.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		CC6BF52C23523F0F0040F7C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC6BF52F23523F0F0040F7C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC6BF53123523F0F0040F7C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEEA01F2352DAEE007D3CF5 /* sample.mypackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sample.mypackage; sourceTree = "<group>"; };
+		CCEEA0212352DCDD007D3CF5 /* mypackage_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mypackage_320.png; sourceTree = "<group>"; };
+		CCEEA0222352DCDD007D3CF5 /* mypackage_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mypackage_64.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		CC6BF52023523F0D0040F7C6 /* MyPackagedDocument */ = {
 			isa = PBXGroup;
 			children = (
+				CCEEA01E2352DADE007D3CF5 /* Resources */,
 				CC6BF52123523F0D0040F7C6 /* AppDelegate.swift */,
 				CC6BF52323523F0D0040F7C6 /* DocumentBrowserViewController.swift */,
 				CC6BF52523523F0D0040F7C6 /* DocumentViewController.swift */,
@@ -69,6 +76,16 @@
 			);
 			path = MyPackagedDocument;
 			sourceTree = "<group>";
+		};
+		CCEEA01E2352DADE007D3CF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEA0222352DCDD007D3CF5 /* mypackage_64.png */,
+				CCEEA0212352DCDD007D3CF5 /* mypackage_320.png */,
+				CCEEA01F2352DAEE007D3CF5 /* sample.mypackage */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -130,7 +147,10 @@
 			files = (
 				CC6BF53023523F0F0040F7C6 /* LaunchScreen.storyboard in Resources */,
 				CC6BF52D23523F0F0040F7C6 /* Assets.xcassets in Resources */,
+				CCEEA0242352DCDD007D3CF5 /* mypackage_64.png in Resources */,
 				CC6BF52B23523F0D0040F7C6 /* Main.storyboard in Resources */,
+				CCEEA0202352DAEE007D3CF5 /* sample.mypackage in Resources */,
+				CCEEA0232352DCDD007D3CF5 /* mypackage_320.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
