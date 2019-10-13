@@ -56,7 +56,7 @@ class Document: UIDocument {
 
     override var savingFileType: String? {
     	print("\(#function)")
-    	return "mypackage"
+    	return "com.example.mypackage"
     }
 
 	override func fileAttributesToWrite(to url: URL, for saveOperation: UIDocument.SaveOperation) throws -> [AnyHashable : Any] {
