@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC1E619323E9F444006FA934 /* MyPackagedDocument.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPackagedDocument.entitlements; sourceTree = "<group>"; };
 		CC6BF51E23523F0D0040F7C6 /* MyPackagedDocument.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPackagedDocument.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6BF52123523F0D0040F7C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6BF52323523F0D0040F7C6 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		CC6BF52023523F0D0040F7C6 /* MyPackagedDocument */ = {
 			isa = PBXGroup;
 			children = (
+				CC1E619323E9F444006FA934 /* MyPackagedDocument.entitlements */,
 				CCEEA01E2352DADE007D3CF5 /* Resources */,
 				CC6BF52123523F0D0040F7C6 /* AppDelegate.swift */,
 				CC6BF52323523F0D0040F7C6 /* DocumentBrowserViewController.swift */,
@@ -308,7 +310,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyPackagedDocument/MyPackagedDocument.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 2P97EM4L4N;
 				INFOPLIST_FILE = MyPackagedDocument/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,6 +321,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.electricwoods.MyPackagedDocument;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,7 +331,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyPackagedDocument/MyPackagedDocument.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 2P97EM4L4N;
 				INFOPLIST_FILE = MyPackagedDocument/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.electricwoods.MyPackagedDocument;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
