@@ -314,7 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 2P97EM4L4N;
-				INFOPLIST_FILE = MyPackagedDocument/Info.plist;
+				INFOPLIST_FILE = "MyPackagedDocument-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,7 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 2P97EM4L4N;
-				INFOPLIST_FILE = MyPackagedDocument/Info.plist;
+				INFOPLIST_FILE = "MyPackagedDocument-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
