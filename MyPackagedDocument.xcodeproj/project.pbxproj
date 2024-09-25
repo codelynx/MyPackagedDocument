@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		CC1E619323E9F444006FA934 /* MyPackagedDocument.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPackagedDocument.entitlements; sourceTree = "<group>"; };
-		CC6BF51E23523F0D0040F7C6 /* MyPackagedDocument.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPackagedDocument.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6BF51E23523F0D0040F7C6 /* MyPackagedDocument-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyPackagedDocument-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6BF52123523F0D0040F7C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6BF52323523F0D0040F7C6 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
 		CC6BF52523523F0D0040F7C6 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		CC6BF51523523F0D0040F7C6 = {
 			isa = PBXGroup;
 			children = (
-				CC6BF52023523F0D0040F7C6 /* MyPackagedDocument */,
+				CC6BF52023523F0D0040F7C6 /* MyPackagedDocument-ios */,
 				CC6BF51F23523F0D0040F7C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,12 +57,12 @@
 		CC6BF51F23523F0D0040F7C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC6BF51E23523F0D0040F7C6 /* MyPackagedDocument.app */,
+				CC6BF51E23523F0D0040F7C6 /* MyPackagedDocument-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC6BF52023523F0D0040F7C6 /* MyPackagedDocument */ = {
+		CC6BF52023523F0D0040F7C6 /* MyPackagedDocument-ios */ = {
 			isa = PBXGroup;
 			children = (
 				CC1E619323E9F444006FA934 /* MyPackagedDocument.entitlements */,
@@ -76,7 +76,7 @@
 				CC6BF52E23523F0F0040F7C6 /* LaunchScreen.storyboard */,
 				CC6BF53123523F0F0040F7C6 /* Info.plist */,
 			);
-			path = MyPackagedDocument;
+			path = "MyPackagedDocument-ios";
 			sourceTree = "<group>";
 		};
 		CCEEA01E2352DADE007D3CF5 /* Resources */ = {
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC6BF51D23523F0D0040F7C6 /* MyPackagedDocument */ = {
+		CC6BF51D23523F0D0040F7C6 /* MyPackagedDocument-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC6BF53423523F0F0040F7C6 /* Build configuration list for PBXNativeTarget "MyPackagedDocument" */;
+			buildConfigurationList = CC6BF53423523F0F0040F7C6 /* Build configuration list for PBXNativeTarget "MyPackagedDocument-ios" */;
 			buildPhases = (
 				CC6BF51A23523F0D0040F7C6 /* Sources */,
 				CC6BF51B23523F0D0040F7C6 /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = MyPackagedDocument;
+			name = "MyPackagedDocument-ios";
 			productName = MyPackagedDocument;
-			productReference = CC6BF51E23523F0D0040F7C6 /* MyPackagedDocument.app */;
+			productReference = CC6BF51E23523F0D0040F7C6 /* MyPackagedDocument-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC6BF51D23523F0D0040F7C6 /* MyPackagedDocument */,
+				CC6BF51D23523F0D0040F7C6 /* MyPackagedDocument-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyPackagedDocument/MyPackagedDocument.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "MyPackagedDocument-ios/MyPackagedDocument.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 2P97EM4L4N;
@@ -331,7 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MyPackagedDocument/MyPackagedDocument.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "MyPackagedDocument-ios/MyPackagedDocument.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 2P97EM4L4N;
@@ -360,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC6BF53423523F0F0040F7C6 /* Build configuration list for PBXNativeTarget "MyPackagedDocument" */ = {
+		CC6BF53423523F0F0040F7C6 /* Build configuration list for PBXNativeTarget "MyPackagedDocument-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC6BF53523523F0F0040F7C6 /* Debug */,
