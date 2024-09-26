@@ -24,7 +24,7 @@
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.example.mypackage</string>
+				<string>com.electricwoods.mypackage</string>
 			</array>
 			<key>LSTypeIsPackage</key>
 			<true/>
@@ -88,7 +88,7 @@
 				<string>mypackage_320.png</string>
 			</array>
 			<key>UTTypeIdentifier</key>
-			<string>com.example.mypackage</string>
+			<string>com.electricwoods.mypackage</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -102,7 +102,25 @@
 	</array>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
-		<dict/>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>mypackage</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>com.example.mypackage</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>mypackage</string>
+				</array>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>

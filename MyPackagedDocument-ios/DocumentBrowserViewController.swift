@@ -35,10 +35,17 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
 	
 	func documentBrowser(_ controller: UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler importHandler: @escaping (URL?, UIDocumentBrowserViewController.ImportMode) -> Void) {
 		print("\(#function)")
-		var samplePackgaeURL = Bundle.main.url(forResource: Self.sampleKey, withExtension: Self.mypackageKey)!
-		let isPackage = (try? samplePackgaeURL.resourceValues(forKeys: [.isPackageKey]).isPackage) ?? false
-		print("isPackage=", isPackage)
-		importHandler(samplePackgaeURL, .copy)
+		do {
+			let directoryWrapper = TextDocument.packageFileWrapper(content: "Hello World")
+			let filepath = NSTemporaryDirectory().appendingPathComponent(UUID().uuidString).appendingPathComponent("Untitled.\(Self.mypackageKey)")
+			let fileURL = URL(fileURLWithPath: filepath)
+			try FileManager.default.createDirectory(atPath: filepath, withIntermediateDirectories: true)
+			try directoryWrapper.write(to: fileURL, options: .atomic, originalContentsURL: nil)
+			importHandler(fileURL, .move)
+		}
+		catch {
+			fatalError()
+		}
 	}
 	
 	func documentBrowser(_ controller: UIDocumentBrowserViewController, didPickDocumentsAt documentURLs: [URL]) {
@@ -64,13 +71,11 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
 	// MARK: Document Presentation
 	
 	func presentDocument(at documentURL: URL) {
-		
-		let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-		let documentViewController = storyBoard.instantiateViewController(withIdentifier: "DocumentViewController") as! DocumentViewController
-		documentViewController.document = Document(fileURL: documentURL)
-		documentViewController.modalPresentationStyle = .fullScreen
-		
-		present(documentViewController, animated: true, completion: nil)
+		let document = TextDocument(fileURL: documentURL)
+		let textViewController = TextViewController.makeViewController(document: document)
+		let navigationController = UINavigationController(rootViewController: textViewController)
+		navigationController.modalPresentationStyle = .fullScreen
+		present(navigationController, animated: true, completion: nil)
 	}
 }
 
