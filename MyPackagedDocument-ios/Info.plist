@@ -24,7 +24,7 @@
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.example.mypackage</string>
+				<string>com.electricwoods.mypackage</string>
 			</array>
 			<key>LSTypeIsPackage</key>
 			<true/>
@@ -88,7 +88,7 @@
 				<string>mypackage_320.png</string>
 			</array>
 			<key>UTTypeIdentifier</key>
-			<string>com.example.mypackage</string>
+			<string>com.electricwoods.mypackage</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
